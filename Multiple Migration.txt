@@ -1,0 +1,9 @@
+Add-Migration Init -Context ApplicationDbContext -OutputDir Migrations/ApplicationDbContextMigrations
+
+Update-Database -Context ApplicationDbContext -Verbose
+
+
+
+
+Add-Migration Init3 -Context ChatContext -OutputDir Migrations/ChatContextMigrations
+Update-Database -Context ChatContext -Verbose
